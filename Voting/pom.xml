@@ -4,4 +4,23 @@
   <artifactId>Voting</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <description>Application for giving mandates for parties in a voting</description>
+  
+  <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.0.1.Final</version>
+        </dependency>
+    </dependencies>
+  
 </project>
