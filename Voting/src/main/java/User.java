@@ -1,9 +1,18 @@
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
 public class User {
 	
+	@Entity
+	@Table(name = "user")
+	private int Id;
 	private String LastName;
 	private String FirstName;
-	private int Id;
 	private boolean isVoted;
 	
 	public boolean isVoted() {
@@ -30,11 +39,10 @@ public class User {
 	public void setId(int id) {
 		Id = id;
 	}
-	public User(String lastName, String firstName, int id) {
-		super();
+	public User(String lastName, String firstName) {
+		
 		LastName = lastName;
 		FirstName = firstName;
-		Id = id;
 		isVoted = false;
 	}
 	@Override
