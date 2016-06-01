@@ -1,9 +1,19 @@
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "party")
 public class Party {
-	
+	@Id
+    	@GeneratedValue(strategy = GenerationType.AUTO)
+    	private int Id;
 	private String Name;
 	private int Nr_of_votes;
-	private int Id;
+	
 	
 	
 	public Party(String name) {
